@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script src="src/jquery-1.8.3.min.js" type="text/javascript"></script>
+  <script src="src/select-narrowing-down.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      $("#narrowing_down").bind("selectNarrowingDown", function(){
+        alert("narrowing_down!");
+      })
+    });
+  </script>
+
+</head>
+<body>
+
+  <h1>select-narrowing-down.jsのデモ</h1>
+
+  <div id="narrowing_down">
+    <select>
+      <option value="">--</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+
+    <select>
+      <option value="">--</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+
+    <select>
+      <option value="">--</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+  </div>
+</body>
+</html>
