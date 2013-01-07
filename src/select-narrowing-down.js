@@ -34,6 +34,8 @@ $(function(){
         });
 
         $(this).trigger("selectNarrowingDown");
+
+        return "aaaa";
       });
 
       // 初期値待避

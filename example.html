@@ -8,8 +8,10 @@
 
   <script type="text/javascript">
     $(function(){
-      $("#narrowing_down").bind("selectNarrowingDown", function(){
-        alert("narrowing_down!");
+        $("#narrowing_down").bind("selectNarrowingDown", function(){
+        var selected_index = $('this').context.activeElement.selectedIndex;
+        var selected_text = $('this').context.activeElement[selected_index].text;
+        alert(selected_text + "が選択されました");
       })
     });
   </script>
@@ -19,26 +21,33 @@
 
   <h1>select-narrowing-down.jsのデモ</h1>
 
+  結婚相手に求めるものを３つ選んでください
   <div id="narrowing_down">
     <select>
       <option value="">--</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
+      <option value="1">お金</option>
+      <option value="2">年齢</option>
+      <option value="3">容姿</option>
+      <option value="4">相性</option>
+      <option value="5">性格</option>
     </select>
 
     <select>
       <option value="">--</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
+      <option value="1">お金</option>
+      <option value="2">年齢</option>
+      <option value="3">容姿</option>
+      <option value="4">相性</option>
+      <option value="5">性格</option>
     </select>
 
     <select>
       <option value="">--</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
+      <option value="1">お金</option>
+      <option value="2">年齢</option>
+      <option value="3">容姿</option>
+      <option value="4">相性</option>
+      <option value="5">性格</option>
     </select>
   </div>
 </body>
