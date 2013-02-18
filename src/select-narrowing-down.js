@@ -1,4 +1,14 @@
-// 初期値保存用の変数
+//  ========================================================
+//  select-narrowing-down,js ---- selectボックスのプルダウン絞り込み用プラグイン
+//  Copyright 2013 Yoshitsugu Fujii
+//  version: 0.0.1
+//
+//  https://github.com/YoshitsuguFujii/select-narrowing-down.js
+//
+//  Licensed under the MIT license
+//  ========================================================
+
+// 初期値保存の変数
 select_bk = []
 
 $(function(){
